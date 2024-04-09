@@ -5,6 +5,8 @@ metadata:
   name: {{ .Values.app.name }}
 spec:
   replicas: {{ .Values.app.replicaCount }}
+  imagePullSecrets:
+    - name: {{ .Values.imagePullSecrets.name }}
   selector:
     matchLabels:
       app: {{ .Values.app.name }}
