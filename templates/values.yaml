@@ -6,3 +6,5 @@ image:
   tag: latest
 service:
   port: 3000
+ingress:
+  host: node.colibrilent.ovh
