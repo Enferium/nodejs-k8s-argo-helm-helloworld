@@ -9,4 +9,4 @@ service:
 ingress:
   host: node.colibrilent.ovh
 imagePullSecrets:
-  - name: regcred
+  name: regcred
