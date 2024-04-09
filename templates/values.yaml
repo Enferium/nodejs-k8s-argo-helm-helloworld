@@ -1,0 +1,8 @@
+app:
+  name: hello-world-k8s
+  replicaCount: 1
+image:
+  repository: my-nodejs-app
+  tag: latest
+service:
+  port: 3000
