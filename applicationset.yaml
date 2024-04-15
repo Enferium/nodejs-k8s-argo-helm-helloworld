@@ -1,0 +1,14 @@
+apiVersion: argoproj.io/v1alpha1
+kind: ApplicationSet
+metadata:
+  name: my-nodejs-app-set
+spec:
+  generators:
+  - git:
+      repoURL: https://github.com/Enferium/nodejs-k8s-argo-helm-helloworld
+      revision: HEAD  # Adjust if needed
+      files:
+      - path: .  # Include all files
+  template:
+    metadata:
+      name: "{{ .FullName }}"  # Dynamic naming based on generator output
