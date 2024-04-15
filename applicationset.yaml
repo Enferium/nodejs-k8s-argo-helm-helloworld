@@ -9,6 +9,6 @@ spec:
       revision: HEAD  # Adjust if needed
       files:
       - path: .  # Include all files
-  template:
-    metadata:
-      name: "{{ .FullName }}"  # Dynamic naming based on generator output
+      template:
+        metadata:
+          name: "{{ .FullName }}"  # Dynamic naming based on generator output
