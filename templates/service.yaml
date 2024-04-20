@@ -3,7 +3,7 @@ kind: Service
 metadata:
   name: {{ .Values.app.name }}
 spec:
-  type: LoadBalancer
+  type: ClusterIP
   ports:
   - port: 80
     targetPort: {{ .Values.service.port }}
