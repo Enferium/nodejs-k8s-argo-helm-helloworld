@@ -9,7 +9,7 @@ spec:
   tls:
   - hosts:
     - {{ .Values.domainName }}
-    secretName: {{ .Values.app.name }}-tls
+    secretName: {{ .Values.secret-tls }}
   rules:
   - host: {{ .Values.domainName }}
     http:
