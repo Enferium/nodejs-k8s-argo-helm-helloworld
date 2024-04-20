@@ -1,6 +1,6 @@
 app:
   name: hello-world-k8s
-  replicaCount: 1
+  replicaCount: 2
 image:
   repository: 67e29247.c1.gra9.container-registry.ovh.net/hello-k8s/hello-k8s
   tag: 1.0.2
